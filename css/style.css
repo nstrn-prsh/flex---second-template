@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTAINER  */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px 0;
+}
+
+nav .container{
+    display: flex;
+}
+
+nav .brand{
+    flex:1
+}
+
+nav .bars {
+    display: none;
+  }
+
+nav .brand img{
+    height: 70px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex: 7 ;
+    justify-content: center;
+    align-items: center; 
+}
+
+nav ul li{
+    text-align: center;
+    /* flex-basis: 10%; */
+    padding: 0 20px;
+}
+
+nav ul li a{
+    font-family: 'Squada One', cursive;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover{
+border-bottom: 2px solid darkred
+}
+
+nav .socials{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .socials i{
+    color: white;
+    font-size: 18px;
+}
+
+/* HEADER */
+header{
+    background: url(./../imgs/baxkground.jpg);
+    background-size: cover;
+    /* background-position: left center; */
+    min-height: calc(100vh + 200px)
+}
+
+header .container{
+    min-height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .header-content{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-top: 100px; */
+}
+
+header .container h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 112px;
+    line-height: 1;
+    font-weight: 400;
+    color: white;
+    flex-basis: 60%;
+    padding-bottom: 30px;
+}
+
+header p{
+    flex-basis: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    color:white;
+    padding-bottom: 50px;
+}
+
+header .link{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .link a{
+    padding: 15px 45px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+    color: white;
+    border-radius: 5px;
+}
+
+header .link a:first-child{
+    background: darkred;
+    border: 2px solid darkred;
+}
+
+header .link a:last-child{
+    background: transparent;
+    border: 2px solid white;
+}
+
+header .link a:last-child:hover{
+    background: white;
+    color: black;
+}
+
+/* <!-- Subscribe --> */
+section#subscribe{
+    width: 100%;
+    background: url(./../imgs/subscribe.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+
+section#subscribe .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+section#subscribe p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    font-size: italic;
+    line-height: 1.1;
+    color: white;
+    padding: 15px 0;
+}
+
+section#subscribe a{
+    padding: 15px 50px;
+    border : 2px solid white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 13px;
+    color: white;
+    border-radius: 5px;
+}
+
+section#subscribe a:hover{
+    background: white;
+    color: #3a009a;
+}
+
+section#match-result{
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    padding-top: 30px;
+    background: url(./../imgs/match-result-bg.png);
+    background-size: cover;
+    background-position: 60% center;
+}
+
+section#match-result h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+section#match-result .underline{
+    display: inline-block;
+    border: 3px solid darkred;
+    width: 50px;
+}
+
+section#match-result .last-result{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+section#match-result .last-result p{
+font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+font-weight: 500;
+line-height: 1.4;
+color: #380ebf;
+}
+
+section#match-result .last-result .result{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+}
+
+section#match-result .last-result .result p{
+    flex-basis: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size:16px;
+    color:#5f5f5f;
+    padding-top: 30px;
+}
+
+section#match-result .last-result .result span{
+    font-family: "Anton", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+section#match-result a{
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    background: darkred;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 13px;
+    border: 2px solid darkred;
+}
+
+section#match-result a:hover{
+    background: white;
+    color: darkred;
+}
+
+/* <!-- Next Match --> */
+section#next-match{
+    width: 100%;
+    padding: 50px 0;
+    background: url(./../imgs/nextmacthbg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+section#next-match .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section#next-match .container > *{
+    flex: 1;
+} */
+
+section#next-match .container #match{
+    /* flex: 5; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section#next-match .container #match > p{
+    flex-basis: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.8;
+padding-top: 20px;
+color: white;
+}
+
+section#next-match .container #match > span{
+    padding: 0 30px;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: white;
+}
+
+section#next-match .container > span{
+    /* flex: 2; */
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+section#next-match .container > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 45px;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 5px;
+    color: #2a0a8f
+}
+
+section#next-match .container > a:hover{
+    background: #2a0a8f;
+    color: white;
+}
+
+section#next-match .container #match div p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    color: white;
+}
+
+/*     <!-- Coach section --> */
+section#coach{
+    width: 100%;
+    padding-top: 100px;
+}
+
+section#coach .container{
+    display: flex;
+}
+
+section#coach blockquote{
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    color:#000;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+section#coach blockquote::before{
+    content: " '' ";
+    display: block;
+    padding: 50px 0;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Anton', sans-serif;
+    color: #380ebf;
+    font-size: 80px;
+    line-height: 0.7;
+    letter-spacing: 1px;
+}
+
+section#coach span.head-coach{
+    display: block;
+    margin-top: 50px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+section#coach span.coach-name{
+    display: block;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Anton",sans-serif;
+    color: #c10002;
+    font-size: 69px;
+    line-height: 1;
+}
+
+section#coach p.said-by-coach{
+    color: #5f5f5f;
+    font-weight: 400;
+    color: #0a0017;
+    font-style: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 60px;
+}
+
+section#coach .coach-image{
+    display: flex;
+    align-items: flex-end;
+}
+
+/* <!-- video --> */
+section#video{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background: url(../imgs/vidoebg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section#video h2{
+font-weight: 400;
+font-style: italic;
+font-family: 'Anton', sans-serif;
+color: #fff;
+font-size: 50px;
+line-height: 1.2;
+margin-top: 50px;
+}
+
+section#video p{
+font-weight: 500;
+font-style: normal;
+font-family: 'Montserrat', sans-serif;
+color: #fff;
+font-size: 16px;
+line-height: 1.1;
+margin-top: 30px;
+}
+
+/* <!-- Team --> */
+section#team{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+section#team h2{
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Anton",sans-serif;
+    color: #000;
+    font-size: 42px;
+    line-height: 1;
+}
+
+section#team .underline{
+    display: block;
+    width: 50px;
+    border: 2px solid darkred;
+    margin: 50px auto;
+}
+
+section#team .player-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#team .player{
+    width: 33.33%;
+    padding: 50px 10px;
+}
+
+section#team .player-image{
+    display: flex;
+    align-items: flex-end;
+}
+
+section#team .player-content{
+    background: #380ebf;
+    padding: 8px 0;
+    clip-path: polygon(0 0 , 100% 0, 97% 100%, 3% 100%);
+}
+
+section#team .player-content span{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+section#team .player-content span:first-child{
+font-weight: 400;
+font-style: normal;
+font-family: 'Anton',sans-serif;
+color: #fff;
+font-size: 30px;
+line-height: 1.4;
+}
+
+section#team .player-content span:last-child{
+font-weight: 500;
+font-style: normal;
+font-family: 'Montserrat', sans-serif;
+color: #fff;
+font-size: 16px;
+line-height: 1.1;
+}
+
+section#team .player-socials{
+    padding: 20px 0;
+}
+
+section#team .player-socials i{
+    padding: 0 5px;
+    color: darkred;
+    font-size: 18px;
+}
+
+section#team .player-socials i:hover{
+    cursor: pointer;
+    color:#380ebf;
+ }
+
+/* <!-- gallery --> */
+section#gallery .gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#gallery  .gallery-container a{
+    flex: 1;
+    position: relative;
+}
+
+section#gallery  .gallery-container a:nth-child(1){
+flex-basis: 26.66%;
+}
+section#gallery  .gallery-container a:nth-child(2){
+flex-basis: 60%;
+}
+section#gallery  .gallery-container a:nth-child(3){
+flex-basis: 16.66%;
+}
+section#gallery  .gallery-container a:nth-child(4){
+flex-basis: 50%;
+}
+section#gallery  .gallery-container a:nth-child(5){
+flex-basis: 60%;
+}
+section#gallery  .gallery-container a:nth-child(6){
+flex-basis: 40%;
+}
+
+section#gallery  .gallery-container a:hover::before{
+    content: '+';
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(56,14,191,0.8);
+    position: absolute;
+    top:0; left:0;
+    color: white;
+    font-size: 50px;
+    font-family: 'Squada One', cursive;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+}
+
+section#gallery .gallery-container img{
+    vertical-align: middle;
+    width: 100%;
+}
+
+section#news{
+width: 100%;
+padding: 50px 0;
+text-align: center;
+}
+
+section#news h2{
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Anton',sans-serif;
+    color: #000;
+    font-size: 42px;
+    line-height: 1;
+}
+
+span .underline{
+    display : inline-block;
+    width:50px;
+    border: 2px solid darkred;
+}
+
+section#news .news-container{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#news .news-container .single-news{
+    width: 30%;
+    text-align: left;
+}
+
+section#news .news-container .single-news span{
+    display: block;
+    padding: 20px 0;
+    font-weight: 900;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #c10002;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+section#news .news-container .single-news h2{
+    line-height: 0.7;
+}
+
+section#news .news-container .single-news a{
+      color: #000;
+      text-decoration: none;
+      font-family: 'Anton', sans-serif;
+      font-size: 24px;
+}
+
+section#news .news-container .single-news p{
+    margin-top: 30px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #0a0017;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* <!-- Sponsor --> */
+section#sponsor {
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    background: url(./../imgs/content-bg05.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section#sponsor h2{
+    font-weight: 400;
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    color: #fff;
+    font-size: 42px;
+    line-height: 1;
+}
+
+section#sponsor .sponsor-container{
+    margin-top: 20px;
+}
+
+/* <!-- Contact  --> */
+section#contact{
+    width: 100%;
+    padding: 50px 0;
+}
+
+section#contact .container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+section#contact .bg-contact{
+    flex-basis: 60%;
+    background: url(./../imgs/content-bg12.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#contact .form-contact{
+    flex-basis: 40%;
+    text-align: left;
+}
+
+section#contact .form-contact h2{
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Anton', sans-serif;
+    color:#000;
+    font-size: 42px;
+    line-height: 1;
+    padding: 20px;
+}
+
+section#contact .form-contact form{
+    padding: 20px;
+}
+
+input:not([type='submit']), textarea{
+    border:2px solid #000;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+input:not([type='submit']),textarea:focus{
+    outline: none;
+}
+
+input[type='submit']{
+padding: 20px 45px;
+background: darkred;
+border-radius: 5px;
+color: white;
+font-family: 'Montserrat',sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.2;
+}
+
+input[type='submit']:hover{
+    background: white;
+    color: darkred;
+}
+
+/* <!-- footer --> */
+footer{
+    width: 100%;
+    padding: 50px;
+    background: url(./../imgs/content-bg06.jpg);
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .thunder-info{
+    flex-basis: 40%;
+    padding: 0 10px;
+    /* text-align: center; */
+}
+
+footer .thunder-info p{
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 50px;
+}
+
+footer .thunder-info .info-socials{
+    margin: 30px 0;
+    text-align: left;
+}
+
+footer .thunder-info i{
+    color: white;
+    padding-right: 20px;
+}
+
+footer .footer-menu{
+    align-self: center;
+    flex-basis:  10%;
+}
+
+footer .footer-menu ul{
+    list-style: none;
+}
+
+footer .footer-menu ul li a{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        color: white;
+        text-decoration: none;
+    }
+
+    footer .footer-menu ul li a:hover{
+        color: darkred;
+    }
+
+footer .footer-contact{
+    flex-basis: 20%;
+    /* flex: 1; */
+    align-self: center;
+    padding-right: 20px;
+}
+
+footer .footer-contact h3{
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.1;
+}
+
+footer .footer-contact p {
+    padding: 15px 0;
+}
+
+footer .footer-contact p span{
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+footer .subscribe{
+ color: #380ebf;
+}
+
+footer .footer-subscribe{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+footer .footer-subscribe h3{
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+footer input[type='submit']{
+    display: block;
+    width: 100%;
+}
+
